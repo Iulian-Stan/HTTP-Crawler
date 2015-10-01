@@ -91,6 +91,8 @@ public class DNSResolver
       DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
       dnsSocket.receive(receivePacket);
 
+      dnsSocket.close();
+      
       if (receiveData[0] != sendData[0] || receiveData[1] != sendData[1]) // test Identification
         System.err.println("Request Id does not match the response !");
       else if ((receiveData[2] & 0xff) >> 7 != 1) // test message type
@@ -210,6 +212,8 @@ public class DNSResolver
 
       DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
       dnsSocket.receive(receivePacket);
+      
+      dnsSocket.close();
 
       if (receiveData[0] != sendData[0] || receiveData[1] != sendData[1]) // test Identification
         System.err.println("Request Id does not match the response !");
