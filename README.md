@@ -32,4 +32,4 @@ It is the 2nd project of a series leading to the implementation of a **Web Robot
  1. [DNSResolver](https://github.com/Iulian-Stan/DNSResolver) 
  2. [HTTPCrawler](https://github.com/Iulian-Stan/HTTPCrawler) 
  3. [HTMLParser](https://github.com/Iulian-Stan/HTMLParser)
- 4. [WebRobot](https://github.com/Iulian-Stan/WebRobot) - work in progress
+ 4. [WebRobot](https://github.com/Iulian-Stan/WebRobot)
